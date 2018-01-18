@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>HibernateWebApp1</display-name>
+  <servlet>
+    <display-name>User</display-name>
+    <servlet-name>User</servlet-name>
+    <servlet-class>com.gm.hibernate.controller.UserControllerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>Success</display-name>
+    <servlet-name>Success</servlet-name>
+    <servlet-class>com.gm.hibernate.controller.Success</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>User</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Success</servlet-name>
+    <url-pattern>/Success</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <display-name>Failure</display-name>
+    <servlet-name>Failure</servlet-name>
+    <servlet-class>com.gm.hibernate.controller.Failure</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Failure</servlet-name>
+    <url-pattern>/Failure</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>register.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Delete</display-name>
+    <servlet-name>Delete</servlet-name>
+    <servlet-class>com.gm.hibernate.controller.Delete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Delete</servlet-name>
+    <url-pattern>/Delete</url-pattern>
+  </servlet-mapping>
+</web-app>
